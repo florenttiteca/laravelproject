@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/', 'PostController@index');
+// Route::get('/', array('uses' => 'PostController@index', 'as' => 'posts.index'));
+// Route::get('/blog/{slug}', array('uses' => 'PostController@view', 'as' => 'post.view'));
+
+// Route::get('/post/edit/{id}', array('uses' => 'PostController@edit', 'as' => 'post.edit'));
+// Route::post('/post/edit/{id}', array('uses' => 'PostController@update', 'as' => 'post.update', 'before' =>'csrf'));
+
+Route::resource('post', 'PostController');

@@ -23,3 +23,6 @@
 // Route::post('/post/edit/{id}', array('uses' => 'PostController@update', 'as' => 'post.update', 'before' =>'csrf'));
 
 Route::resource('post', 'PostController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

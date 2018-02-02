@@ -1,4 +1,4 @@
-@extends('layout');
+@extends('layouts.app')
 
 @section('content')
 <p><a href=" {{ URL::route("post.index") }}">Ma liste</a></p>
